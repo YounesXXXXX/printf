@@ -39,7 +39,3 @@ int x_print_rot_x(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	return (i);
 }
-			ibuf = x_handl_buf_x(buf, str[i], ibuf);
-	}
-	return (i);
-}
