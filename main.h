@@ -48,11 +48,13 @@ int x_prinnoct_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinnhex_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinnupx_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinsint_x(va_list arguments, char *buf, unsigned int ibuf);
-int (*x_get_print_func_x(const char *s, int index))(va_list, char *, unsigned int);
+int (*x_get_print_func_x(const char *s, int index))(va_list, char *,
+ unsigned int);
 int x_ev_print_func_x(const char *s, int index);
 unsigned int x_handl_buf_x(char *buf, char c, unsigned int ibuf);
 int x_print_buf_x(char *buf, unsigned int nbuf);
-char *x_fill_binary_array_x(char *binary, long int int_in, int isneg, int limit);
+char *x_fill_binary_array_x(char *binary, long int int_in, int isneg,
+ int limit);
 char *x_fill_oct_array_x(char *bnr, char *oct);
 char *x_fill_long_oct_array_x(char *bnr, char *oct);
 char *x_fill_short_oct_array_x(char *bnr, char *oct);
