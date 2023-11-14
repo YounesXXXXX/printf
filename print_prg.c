@@ -1,38 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * x_prinpint_x - print integer with plus symbol
- * @arguments: input string
+ * x_print_prg_x - writes the character c to stdout
+ * @a: input char
  * @buf: buffer pointer
- * @ibuf: index for buffer pointer
- * Return: number of chars printed
+ * @i: index for buffer pointer
+ * Return: On success 1.
  */
-int x_prinpint_x(va_list arguments, char *buf, unsigned int ibuf)
+int x_print_prg_x(va_list a __attribute__((unused)), char *buf, unsigned int i)
 {
-	int int_input;
-	unsigned int int_in, int_temp, i, div;
+	x_handl_buf_x(buf, '%', i);
 
-	int_input = va_arg(arguments, int);
-	if (int_input < 0)
-	{
-		int_in = int_input * -1;
-		ibuf = x_handl_buf_x(buf, '-', ibuf);
-	}
-	else
-	{
-		int_in = int_input;
-		ibuf = x_handl_buf_x(buf, '+', ibuf);
-	}
-	int_temp = int_in;
-	div = 1;
-	while (int_temp > 9)
-	{
-		div *= 10;
-		int_temp /= 10;
-	}
-	for (i = 0; div > 0; div /= 10, i++)
-	{
-		ibuf = x_handl_buf_x(buf, ((int_in / div) % 10) + '0', ibuf);
-	}
-	return (i + 1);
+	return (1);
 }
