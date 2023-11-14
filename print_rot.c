@@ -1,4 +1,12 @@
+#include "main.h"
 
+/**
+ * x_print_rot_x - writes the str in ROT13
+ * @arguments: input string
+ * @buf: buffer pointer
+ * @ibuf: index for buffer pointer
+ * Return: number of chars printed.
+ */
 
 int x_print_rot_x(va_list arguments, char *buf, unsigned int ibuf)
 {
@@ -27,6 +35,10 @@ int x_print_rot_x(va_list arguments, char *buf, unsigned int ibuf)
 			}
 		}
 		if (k == 0)
+			ibuf = x_handl_buf_x(buf, str[i], ibuf);
+	}
+	return (i);
+}
 			ibuf = x_handl_buf_x(buf, str[i], ibuf);
 	}
 	return (i);
