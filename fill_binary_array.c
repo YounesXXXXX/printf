@@ -9,7 +9,7 @@
  * Return: number of chars printed.
  */
 char *x_fill_binary_array_x(char *binary, long int int_in, int isneg,
- int limit)
+				int limit)
 {
 	int i;
 
