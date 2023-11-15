@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 			else
-			{	function = x_get_print_func_x(format, i + 1);
+			{	function = getprint_func(format, i + 1);
 				if (function == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
