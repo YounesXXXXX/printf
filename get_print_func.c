@@ -5,8 +5,7 @@
  * @index: index for argument indentifier
  * Return: pointer to a function.
  */
-int (*getprint_func(const char *s, int index))(va_list, char *,
-				unsigned int)
+int (*getprint_func(const char *s, int index))(va_list, char *, unsigned int)
 {
 	print_t pr[] = {
 		{"c", x_print_chr_x}, {"s", x_print_str_x},
