@@ -48,7 +48,7 @@ int x_prinnoct_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinnhex_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinnupx_x(va_list arguments, char *buf, unsigned int ibuf);
 int x_prinsint_x(va_list arguments, char *buf, unsigned int ibuf);
-int (*x_get_print_func_x(const char *s,
+int (*getprint_func(const char *s,
 			int index))(va_list, char *, unsigned int);
 int x_ev_print_func_x(const char *s, int index);
 unsigned int x_handl_buf_x(char *buf, char c, unsigned int ibuf);
