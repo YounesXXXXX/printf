@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * x_get_print_func_x - selects the correct function to perform the operation.
+ * getprint_func - selects the correct function to perform the operation.
  * @s: argument indentifier
  * @index: index for argument indentifier
  * Return: pointer to a function.
